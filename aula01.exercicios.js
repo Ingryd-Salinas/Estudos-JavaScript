@@ -1,4 +1,7 @@
 /*
+Resolvendo Exercícios do 1° Cápitulo do livro Eloquent JavaScript
+Lido dia 28/01/2026
+
 Triângulo com Loop
 Escreva um programa que faça sete chamadas a console.log() para retornar o seguinte triângulo:
 #
