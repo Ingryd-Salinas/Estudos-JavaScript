@@ -1,0 +1,36 @@
+<!-- Referente a aula 09 sobre DOM do curso de JavaScript pelo Guanabara, no dia 29/01/2026 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(68,125,199);
+            color: white;
+            font: normal 18pt Arial;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <div id="tab">Novo clique!</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        var t =window.document.querySelector('div#tab')//usando Seletor
+        
+        t.style.background = 'purple'
+        d.style.background = 'green'
+        d.innerText= 'Estou aguardando...' //muda o conteúdo da variável
+        window.document.write(p2.innerHTML);
+    </script>
+</body>
+</html>
